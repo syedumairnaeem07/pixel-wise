@@ -19,7 +19,7 @@ export const connectToDatabase = async () => {
     cached.promise =
         cached.promise ||
         mongoose.connect(MONGODB_URL, {
-            dbName: "pixel-wise",
+            dbName: "pixel-wise-new",
             bufferCommands: false,
         });
 
