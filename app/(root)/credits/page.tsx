@@ -78,12 +78,18 @@ const Credits = async () => {
                                 </Button>
                             ) : (
                                 <SignedIn>
-                                    <Checkout
+                                    <Button
+                                        variant="outline"
+                                        className="credits-btn"
+                                    >
+                                        Coming Soon
+                                    </Button>
+                                    {/* <Checkout
                                         plan={plan.name}
                                         amount={plan.price}
                                         credits={plan.credits}
                                         buyerId={user._id}
-                                    />
+                                    /> */}
                                 </SignedIn>
                             )}
                         </li>
